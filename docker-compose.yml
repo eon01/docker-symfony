@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+    php:
+        build: php7-fpm
+        volumes:
+            - ${SYMFONY_APP_PATH}:/var/www/symfony
+    nginx:
+        build: nginx
+        ports:
+            - 80:80
+        volumes_from:
+            - php
