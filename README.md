@@ -16,4 +16,5 @@ docker-compose up
 Now go to http://127.0.0.1
 
 This project is inspired from: maxpou/docker-symfony
+
 Thanks to [@bsene](https://github.com/bsene)
