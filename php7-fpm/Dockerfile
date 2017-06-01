@@ -34,6 +34,7 @@ RUN echo 'alias sf="php app/console"' >> ~/.bashrc
 RUN echo 'alias sf3="php bin/console"' >> ~/.bashrc
 
 COPY ./entrypoint.sh /
+RUN chmod +x ./entrypoint.sh
 
 WORKDIR /var/www/symfony
 
