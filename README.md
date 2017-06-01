@@ -9,7 +9,6 @@ git clone https://github.com/eon01/docker-symfony.git
 cd docker-symfony
 mkdir code
 echo -e "<?php\n// Show all information, defaults to INFO_ALL\nphpinfo();\n?>" > code/index.php
-cd ..
 sudo chown -R www-data:www-data code/
 docker-compose up
 ```
